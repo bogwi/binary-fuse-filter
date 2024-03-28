@@ -8,11 +8,11 @@
   "scripts": {
     "test": "node --test",
     "build": "tsc",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
-      },
+  },
   "keywords": [
     "bigint",
     "binary fuse filter",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bogwi/binary-fuse-filter.git"
+    "url": "git+https://github.com/bogwi/binary-fuse-filter.git"
   },
   "bugs": {
     "url": "https://github.com/bogwi/binary-fuse-filter.git/issues"
