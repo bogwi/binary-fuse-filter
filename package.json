@@ -1,0 +1,39 @@
+{
+  "name": "binary-fuse-filter",
+  "version": "1.0.0",
+  "description": "JavaScript-TypeScript module implementing binary fuse 8 filter for BigInt",
+  "homepage": "https://github.com/bogwi/binary-fuse-filter",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "test": "node --test",
+    "build": "tsc",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+      },
+  "keywords": [
+    "bigint",
+    "binary fuse filter",
+    "probabilistic data-structures"
+  ],
+  "author": {
+    "name": "Dan Wi",
+    "email": "bogwi@rakumail.jp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bogwi/binary-fuse-filter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bogwi/binary-fuse-filter.git/issues"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "typescript": "^5.4.3"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
